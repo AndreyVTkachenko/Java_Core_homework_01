@@ -8,7 +8,7 @@ public class ResultPrinter {
         this.result = result;
     }
 
-    public void printResult(String comment) {
-        System.out.println(comment + result);
+    public void printResult(String string) {
+        System.out.println("Полученный результат \t" + string + " " + result);
     }
 }

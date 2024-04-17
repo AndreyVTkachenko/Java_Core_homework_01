@@ -5,23 +5,25 @@ import task.math.ResultPrinter;
 
 public class Main {
     public static void main(String[] args) {
-        // Создание экземпляра класса Calculator
+
         Calculator calculator = new Calculator();
 
-        // Выполнение математической операции сложения
-        ResultPrinter printer = new ResultPrinter(calculator.multiply(5, 3));
-        printer.printResult("Результат сложения 5 и 3 = ");
+        ResultPrinter printer = new ResultPrinter(calculator.add(5, 3));
+        printer.printResult("Сложение");
 
-        // Выполнение математической операции вычитания
         printer = new ResultPrinter(calculator.subtract(10, 3));
-        printer.printResult("Результат вычитания 10 и 3 = ");
+        printer.printResult("Вычитание");
 
-        // Выполнение математической операции умножения
         printer = new ResultPrinter(calculator.multiply(5, 3));
-        printer.printResult("Результат умножения 5 и 3 = ");
+        printer.printResult("Умножение");
 
-        // Выполнение математической операции деления
         printer = new ResultPrinter(calculator.divide(10, 3));
-        printer.printResult("Результат деления 10 и 3 = ");
+        printer.printResult("Деление");
+
+        printer = new ResultPrinter(calculator.pow(2, 4));
+        printer.printResult("Возведение в степень");
+
+        printer = new ResultPrinter(calculator.factorial(5));
+        printer.printResult("Факториал");
     }
 }

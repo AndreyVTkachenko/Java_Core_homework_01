@@ -1,13 +1,12 @@
 package task.math;
 
-// Класс для выполнения конкретных математических операций
+
 public class Calculator extends MathOperation {
-    @Override
-    int performOperation(int a, int b) {
+
+    public int add(int a, int b) {
         return a + b;
     }
 
-    // Методы для других математических операций
     public int subtract(int a, int b) {
         return a - b;
     }
@@ -18,5 +17,26 @@ public class Calculator extends MathOperation {
 
     public int divide(int a, int b) {
         return a / b;
+    }
+
+    public int pow(int base, int exponent) {
+        int result = 1;
+        for (int i = 0; i < exponent; i++) {
+            result *= base;
+        }
+        return result;
+    }
+
+    public int factorial(int number) {
+        int result = 1;
+        for (int i = 2; i <= number; i++) {
+            result *= i;
+        }
+        return result;
+    }
+
+    @Override
+    int performOperation(int a, int b) {
+        return 0;
     }
 }
