@@ -27,3 +27,9 @@ public class Main {
         printer.printResult("Факториал");
     }
 }
+
+/*
+Команды терминала:
+javac -sourcepath ./java -d out java/task/console/Main.java
+java -classpath ./out task.console.Main
+ */
